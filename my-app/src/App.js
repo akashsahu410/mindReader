@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 class App extends Component {
   state={
     table:[],
@@ -24,9 +23,9 @@ class App extends Component {
     let table = []
     let c=1,d,differentIcon;
     let fixIcon=icons[(Math.floor(Math.random()*icons.length))]
-    console.log(fixIcon)
+    // console.log(fixIcon)
     this.state.iconshow.push(fixIcon)
-    console.log("iconshow",this.state.iconshow)
+    // console.log("iconshow",this.state.iconshow)
     let css={
       fontSize:20,
     }
@@ -77,7 +76,9 @@ class App extends Component {
           <center>
             <br/><br/>
             <h3><label for>You think about this symbol</label></h3>
-            <i class={this.state.iconshow[0]} style={{paddingTop:50,fontSize:250,height:500}}></i>
+            <a href="/"><b><h3>Play Again</h3></b></a><br/>
+            <i class={this.state.iconshow[0]} style={{paddingTop:40,fontSize:250,height:500}}></i>
+            
           </center>
         </div>)
 
